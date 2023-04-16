@@ -12,13 +12,13 @@ const { NotImplementedError } = require('../extensions/index.js');
  * 
  */
 function getSeason(date) {
-  // throw new NotImplementedError('Not implemented');
+  throw new NotImplementedError('Not implemented');
   // remove line with error and write your code here
 
-  console.log(date.getMonth())
+  // console.log(date.getMonth())
 }
 
-getSeason(new Date(2020, 02, 31))
+// getSeason(new Date(2020, 02, 31))
 
 module.exports = {
   getSeason
