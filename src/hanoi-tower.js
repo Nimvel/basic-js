@@ -19,11 +19,11 @@ function calculateHanoi(disksNumber, turnsSpeed) {
   // remove line with error and write your code here
 
   let turns = 2 ** disksNumber - 1
-  let seconds = Math.floor((turnsSpeed / 3600) * turns)
+  let seconds = Math.floor(turns / (turnsSpeed / 3600))
   return {turns, seconds}
 }
 
-// console.log(calculateHanoi(5, 4074))
+console.log(calculateHanoi(5, 4074))
 // turns: 31, seconds: 27
 // console.log(calculateHanoi(38, 4594))
 // { turns: 274877906943, seconds: 215402800390 }
